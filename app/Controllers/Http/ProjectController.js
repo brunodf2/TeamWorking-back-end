@@ -86,7 +86,7 @@ class ProjectController {
    * @param {Request} ctx.request
    * @param {Response} ctx.response
    */
-  async destroy({ params, request, response }) {
+  async destroy({ params, request}) {
     const project = await request.team
       .projects()
       .where("id", params.id)

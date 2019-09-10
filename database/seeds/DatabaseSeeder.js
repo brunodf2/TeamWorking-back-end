@@ -51,7 +51,7 @@ class DatabaseSeeder {
     await moderator.permissions().attach([createProject.id]);
 
     const team = await user.teams().create({
-      name: "rockeseat",
+      name: "rocketseat",
       user_id: user.id
     });
 
