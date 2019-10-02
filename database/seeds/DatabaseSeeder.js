@@ -18,7 +18,7 @@ class DatabaseSeeder {
   async run() {
     const user = await User.create({
       name: "Bruno",
-      email: "bruno@rocketseat.com",
+      email: "bruno@teamWorking.com",
       password: "123456"
     });
 
@@ -51,7 +51,7 @@ class DatabaseSeeder {
     await moderator.permissions().attach([createProject.id]);
 
     const team = await user.teams().create({
-      name: "rocketseat",
+      name: "teamWorking",
       user_id: user.id
     });
 
